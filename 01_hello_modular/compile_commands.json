@@ -1,0 +1,92 @@
+[
+  {
+    "file": "src/main.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c23",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-O0",
+      "-Iinclude",
+      "src/main.c",
+      "-o",
+      "hello"
+    ],
+    "directory": "/home/nether/Documents/dev/projects/01_hello_modular",
+    "output": "hello"
+  },
+  {
+    "file": "src/hello.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c23",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-O0",
+      "-Iinclude",
+      "src/hello.c",
+      "-o",
+      "hello"
+    ],
+    "directory": "/home/nether/Documents/dev/projects/01_hello_modular",
+    "output": "hello"
+  },
+  {
+    "file": "src/vowels.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c23",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-O0",
+      "-Iinclude",
+      "src/vowels.c",
+      "-o",
+      "hello"
+    ],
+    "directory": "/home/nether/Documents/dev/projects/01_hello_modular",
+    "output": "hello"
+  },
+  {
+    "file": "src/stack.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c23",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-O0",
+      "-Iinclude",
+      "src/stack.c",
+      "-o",
+      "hello"
+    ],
+    "directory": "/home/nether/Documents/dev/projects/01_hello_modular",
+    "output": "hello"
+  },
+  {
+    "file": "src/recursion.c",
+    "arguments": [
+      "/usr/bin/gcc",
+      "-std=c23",
+      "-Wall",
+      "-Wextra",
+      "-Wpedantic",
+      "-g",
+      "-O0",
+      "-Iinclude",
+      "src/recursion.c",
+      "-o",
+      "hello"
+    ],
+    "directory": "/home/nether/Documents/dev/projects/01_hello_modular",
+    "output": "hello"
+  }
+]
