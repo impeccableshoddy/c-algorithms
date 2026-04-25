@@ -16,4 +16,9 @@ void merge(int arr[], int left, int mid, int right);
 void merge_sort(int arr[], int left, int right);
 int count_subsets(int n);
 
+// Space
+int *copy_array(int arr[], int n);
+int factorial_recursive(int n);
+int binary_search_recursive(int arr[], int left, int right, int target);
+
 #endif
