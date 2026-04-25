@@ -9,4 +9,11 @@ void trace_1d(int arr[], int n);
 void trace_1e(int n);
 int trace_1f(int arr[], int n, int target);
 
+// Growth
+int find_sum(int arr[], int n);
+int find_max_pair_sum(int arr[], int n);
+void merge(int arr[], int left, int mid, int right);
+void merge_sort(int arr[], int left, int right);
+int count_subsets(int n);
+
 #endif

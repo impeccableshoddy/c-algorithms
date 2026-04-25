@@ -53,8 +53,8 @@ int get_first(int arr[]) { return arr[0]; }
 // You implement
 int find_sum(int arr[], int n);
 int find_max_pair_sum(int arr[], int n);
-int binary_search_index(int arr[], int n, int target);
 void merge_sort(int arr[], int left, int right);
+int count_subsets(int n);
 ```
 
 Deliverable: `src/growth.c`
