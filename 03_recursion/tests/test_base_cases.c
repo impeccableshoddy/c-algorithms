@@ -2,7 +2,7 @@
 #include <assert.h>
 #include <string.h>
 
-int main() {
+int main(void) {
     // 1a
     assert(sum_digits(123) == 6);
 
