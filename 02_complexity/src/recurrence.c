@@ -1,14 +1,10 @@
 #include "complexity.h"
 
 int count_bits(int n) {
-    // Time: O(log n)
-    // Space: O(1)
-    int count = 0;
-    while (n > 0) {
-        count += (n & 1);
-        n >>= 1;
-    }
-    return count;
+    // Recurrence: T(n) = T(n/2) + O(1) -> O(log n)
+    if (n == 0)
+        return 0;
+    return (n & 1) + count_bits(n >> 1);
 }
 
 void merge_labelled(int arr[], int left, int mid, int right) {
@@ -52,13 +48,23 @@ void merge_sort_labelled(int arr[], int left, int right) {
 }
 
 int sum_all_pairs(int arr[], int n) {
-    // Time: O(n)
-    // Space: O(1)
-    int sum_of_elements = 0; // Space: 0(1)
-    // Time: O(n)
-    // Space: O(1)
-    for (int i = 0; i < n; i++) {
-        sum_of_elements += arr[i]; // Time: O(1)
+    // Time: O(n^2)
+    // Space: O(n)
+    // Recurrence: T(n) = T(n - 1) + n
+    if (n == 0)
+        return 0;
+    int sum = 0;
+    for (int i = 0; i < n - 1; i++) {
+        sum += arr[i] + arr[n - 1];
     }
-    return 2 * n * sum_of_elements;
+    return sum + sum_all_pairs(arr, n - 1);
+}
+
+int count_subsets_labelled(int n) {
+    // Time: O(2^n)
+    // Space: O(n)
+    // Recurrence: T(n) = 2T(n - 1) + O(1)
+    if (n == 0) // O(1)
+        return 1;
+    return count_subsets_labelled(n - 1) + count_subsets_labelled(n - 1);
 }

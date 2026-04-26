@@ -26,10 +26,19 @@ int count_bits(int n);
 void merge_labelled(int arr[], int left, int mid, int right);
 void merge_sort_labelled(int arr[], int left, int right);
 int sum_all_pairs(int arr[], int n);
+int count_subsets_labelled(int n);
 
 // Master Theorem
 void case_1(int n);
 void case_2(int n);
 void case_3(int n);
+
+// Amortized Analysis
+typedef struct {
+    int *data;
+    int size;
+    int capacity;
+} DynamicArray;
+void da_push(DynamicArray *da, int value);
 
 #endif

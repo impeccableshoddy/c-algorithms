@@ -12,8 +12,8 @@ int main(void) {
     int bit_n = 7;
     printf("Bits in %d: %d\n", bit_n, count_bits(bit_n));
 
-    // 2. Sum All Pairs (Expected: 2 * n * sum)
-    // For {1, 2, 3}, sum=6, n=3. Expected: 2 * 3 * 6 = 36
+    // 2. Sum All Pairs
+    // Expected: 12
     int pair_arr[] = { 1, 2, 3 };
     int pair_n     = 3;
     printf("Sum All Pairs: %d\n", sum_all_pairs(pair_arr, pair_n));
@@ -26,6 +26,10 @@ int main(void) {
     merge_sort_labelled(sort_arr, 0, sort_n - 1);
     printf("After Sort:  ");
     print_arr(sort_arr, sort_n);
+
+    // 4. Count subsets
+    // For n = 7, Expected: 128
+    printf("No. of subsets for %d: %d\n", bit_n, count_subsets_labelled(bit_n));
 
     return 0;
 }

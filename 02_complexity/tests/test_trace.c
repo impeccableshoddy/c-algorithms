@@ -2,7 +2,7 @@
 
 int main(void) {
 
-    int n = 4;
+    int n      = 4;
     int arr[4] = { 1, 2, 3, 4 };
     // clang-format off
     int arr2[4][4] = { 
@@ -13,7 +13,9 @@ int main(void) {
     };
     // clang-format on
 
+    // demonstrating O(1) access
     trace_1a(arr);
+
     trace_1b(arr, n);
     trace_1c(n, arr2);
     trace_1d(arr, n);

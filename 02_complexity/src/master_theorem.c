@@ -8,11 +8,11 @@
 // Case 2 applies
 // Result: T(n) = θ(n log n)
 void case_2(int n) {
+    if (n <= 1)
+        return;
     for (int i = 0; i < n; i++) {
         printf(".");
     }
-    if (n <= 1)
-        return;
     case_2(n / 2);
     case_2(n - n / 2);
 }
@@ -24,13 +24,13 @@ void case_2(int n) {
 // Case 3 applies
 // Result: T(n) = θ(f(n)) = θ(n^2)
 void case_3(int n) {
+    if (n <= 1)
+        return;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             printf(".");
         }
     }
-    if (n <= 1)
-        return;
     case_3(n / 2);
     case_3(n - n / 2);
 }
@@ -42,9 +42,9 @@ void case_3(int n) {
 // Case 1 applies
 // Result: T(n) = θ(n^c) = θ(n)
 void case_1(int n) {
-    printf(".");
     if (n <= 1)
         return;
+    printf(".");
     case_1(n / 2);
     case_1(n - n / 2);
 }

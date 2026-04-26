@@ -5,7 +5,7 @@ int main(void) {
     int n = 4;
 
     // Case 1: T(n) = 2T(n/2) + 1 -> O(n)
-    // Expected: 2n - 1 dots (For n=4, expect 7 dots)
+    // Expected: log n levels of calls, (For n=4, expect 3 dots)
     printf("--- Case 1: O(n) ---\n");
     case_1(n);
     printf("\n\n");
