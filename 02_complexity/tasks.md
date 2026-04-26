@@ -99,7 +99,6 @@ int factorial(int n) {
 int count_bits(int n);
 void merge_sort_labeled(int arr[], int left, int right);
 int sum_all_pairs(int arr[], int n);
-int count_subsets(int n);
 ```
 
 Deliverable: `src/recurrence.c`
