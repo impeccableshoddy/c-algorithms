@@ -27,4 +27,9 @@ void merge_labelled(int arr[], int left, int mid, int right);
 void merge_sort_labelled(int arr[], int left, int right);
 int sum_all_pairs(int arr[], int n);
 
+// Master Theorem
+void case_1(int n);
+void case_2(int n);
+void case_3(int n);
+
 #endif
