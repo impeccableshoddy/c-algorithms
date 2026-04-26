@@ -41,4 +41,9 @@ typedef struct {
 } DynamicArray;
 void da_push(DynamicArray *da, int value);
 
+// Three Notations
+int search_best_case(int arr[], int n, int target);
+int search_worst_case(int arr[], int n, int target);
+int search_average_case(int arr[], int n, int target);
+
 #endif
