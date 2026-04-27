@@ -24,4 +24,10 @@ long long power_recursive(int base, int exp);
 long long power_tail_helper(int base, int exp, long long acc);
 long long power_tail(int base, int exp);
 
+// Task 4
+void hanoi(int n, char from, char to, char aux);
+int hanoi_count(int n);
+int tail_hanoi_count_helper(int n, int acc);
+int tail_hanoi_count(int n);
+
 #endif
