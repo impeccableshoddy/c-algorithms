@@ -13,4 +13,15 @@ int fib_memo(int n, int memo[]);
 int count_paths(int n, int m);
 void generate_subsets(int n, int current, int index);
 
+// Task 3
+unsigned long long factorial_recursive(int n);
+unsigned long long factorial_tail_helper(int n, unsigned long long acc);
+unsigned long long factorial_tail(int n);
+int sum_array_recursive(int arr[], int n);
+int sum_array_tail_helper(int arr[], int n, int acc);
+int sum_array_tail(int arr[], int n);
+long long power_recursive(int base, int exp);
+long long power_tail_helper(int base, int exp, long long acc);
+long long power_tail(int base, int exp);
+
 #endif
