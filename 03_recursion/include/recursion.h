@@ -30,4 +30,12 @@ int hanoi_count(int n);
 int tail_hanoi_count_helper(int n, int acc);
 int tail_hanoi_count(int n);
 
+// Task 5
+int climb_naive(int n);
+int climb_memo(int n, int memo[]);
+int min_coins_naive(int coins[], int k, int amount);
+int min_coins_memo(int coins[], int k, int amount, int memo[]);
+int lis_naive(int arr[], int n, int prev_index, int curr_index);
+int lis_memo(int arr[], int n, int prev_index, int curr_index, int memo[][n]);
+
 #endif
